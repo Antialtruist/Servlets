@@ -1,0 +1,52 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Java Servlet Start</display-name>
+  
+  
+  <servlet>
+  
+  	<servlet-name>Servlet</servlet-name>
+  	<servlet-class>d.bozhevilnyi.Servlet</servlet-class>
+  	
+  </servlet>
+  
+  <servlet>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.StatusCodeDemo</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.ServletRequestDemo</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.ServletResponseDemo</servlet-class>
+    </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>Servlet</servlet-name>
+  	<url-pattern>/Servlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+        <servlet-name>StatusCodeDemo</servlet-name>
+        <url-pattern>/StatusCodeDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <url-pattern>/ServletRequestDemo</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <url-pattern>/ServletResponseDemo</url-pattern>
+   </servlet-mapping>
+  
+</web-app>
