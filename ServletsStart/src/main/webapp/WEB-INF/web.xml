@@ -37,6 +37,11 @@
         <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.PassingParametersUsingPostMethodDemo</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>ErrorDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.ErrorDemo</servlet-class>
+    </servlet>
   
   
   <servlet-mapping>
@@ -68,5 +73,19 @@
         <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
         <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
    </servlet-mapping>
+   
+   <servlet-mapping>
+        <servlet-name>ErrorDemo</servlet-name>
+        <url-pattern>/ErrorDemo</url-pattern>
+   </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorDemo</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Error</exception-type>
+        <location>/ErrorDemo</location>
+    </error-page>
   
 </web-app>
