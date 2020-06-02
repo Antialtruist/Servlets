@@ -27,6 +27,11 @@
         <servlet-name>ServletResponseDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.ServletResponseDemo</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.PassingParametersUsingGetMethodDemo</servlet-class>
+    </servlet>
   
   
   <servlet-mapping>
@@ -47,6 +52,11 @@
    <servlet-mapping>
         <servlet-name>ServletResponseDemo</servlet-name>
         <url-pattern>/ServletResponseDemo</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingGetMethodDemo</url-pattern>
    </servlet-mapping>
   
 </web-app>
