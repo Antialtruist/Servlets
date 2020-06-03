@@ -62,6 +62,11 @@
         <servlet-name>CookieDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.CookieDemo</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>DatabaseDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.DatabaseDemo</servlet-class>
+    </servlet>
   
   
   <servlet-mapping>
@@ -103,6 +108,12 @@
         <servlet-name>CookieDemo</servlet-name>
         <url-pattern>/CookieDemo</url-pattern>
     </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>DatabaseDemo</servlet-name>
+        <url-pattern>/DatabaseDemo</url-pattern>
+    </servlet-mapping>
+    
    
    <servlet-mapping>
         <servlet-name>ErrorDemo</servlet-name>
