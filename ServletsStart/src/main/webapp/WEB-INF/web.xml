@@ -19,10 +19,8 @@
   
   
   <servlet>
-  
   	<servlet-name>Servlet</servlet-name>
   	<servlet-class>d.bozhevilnyi.Servlet</servlet-class>
-  	
   </servlet>
   
   <servlet>
@@ -54,11 +52,10 @@
         <servlet-name>ErrorDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.ErrorDemo</servlet-class>
     </servlet>
+    
     <servlet>
-    	<servlet-name>Qw</servlet-name>
-    	<display-name>Qw</display-name>
-    	<description></description>
-    	<servlet-class>d.bozhevilnyi.Qw</servlet-class>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.SessionTrackingDemo</servlet-class>
     </servlet>
   
   
@@ -93,21 +90,25 @@
    </servlet-mapping>
    
    <servlet-mapping>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <url-pattern>/SessionTrackingDemo</url-pattern>
+    </servlet-mapping>
+   
+   <servlet-mapping>
         <servlet-name>ErrorDemo</servlet-name>
         <url-pattern>/ErrorDemo</url-pattern>
    </servlet-mapping>
-   <servlet-mapping>
-   	<servlet-name>Qw</servlet-name>
-   	<url-pattern>/Qw</url-pattern>
-   </servlet-mapping>
+   
+   
 
     <error-page>
         <error-code>404</error-code>
         <location>/ErrorDemo</location>
     </error-page>
+    
     <error-page>
         <exception-type>java.lang.Error</exception-type>
         <location>/ErrorDemo</location>
     </error-page>
-  
+    
 </web-app>
