@@ -57,6 +57,11 @@
         <servlet-name>SessionTrackingDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.SessionTrackingDemo</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>CookieDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.CookieDemo</servlet-class>
+    </servlet>
   
   
   <servlet-mapping>
@@ -92,6 +97,11 @@
    <servlet-mapping>
         <servlet-name>SessionTrackingDemo</servlet-name>
         <url-pattern>/SessionTrackingDemo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>CookieDemo</servlet-name>
+        <url-pattern>/CookieDemo</url-pattern>
     </servlet-mapping>
    
    <servlet-mapping>
