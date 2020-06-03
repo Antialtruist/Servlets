@@ -6,6 +6,18 @@
   <display-name>Java Servlet Start</display-name>
   
   
+  <filter>
+  	<filter-name>FilterDemo</filter-name>
+  	<display-name>FilterDemo</display-name>
+  	<filter-class>d.bozhevilnyi.FilterDemo</filter-class>
+  </filter>
+ 
+  <filter-mapping>
+  	<filter-name>FilterDemo</filter-name>
+  	<url-pattern>/FilterDemo</url-pattern>
+  </filter-mapping>
+  
+  
   <servlet>
   
   	<servlet-name>Servlet</servlet-name>
@@ -42,6 +54,12 @@
         <servlet-name>ErrorDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.ErrorDemo</servlet-class>
     </servlet>
+    <servlet>
+    	<servlet-name>Qw</servlet-name>
+    	<display-name>Qw</display-name>
+    	<description></description>
+    	<servlet-class>d.bozhevilnyi.Qw</servlet-class>
+    </servlet>
   
   
   <servlet-mapping>
@@ -77,6 +95,10 @@
    <servlet-mapping>
         <servlet-name>ErrorDemo</servlet-name>
         <url-pattern>/ErrorDemo</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>Qw</servlet-name>
+   	<url-pattern>/Qw</url-pattern>
    </servlet-mapping>
 
     <error-page>
