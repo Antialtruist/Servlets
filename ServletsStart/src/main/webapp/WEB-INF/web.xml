@@ -67,6 +67,11 @@
         <servlet-name>DatabaseDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.DatabaseDemo</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.DateTimeDemo</servlet-class>
+    </servlet>
   
   
   <servlet-mapping>
@@ -112,6 +117,11 @@
      <servlet-mapping>
         <servlet-name>DatabaseDemo</servlet-name>
         <url-pattern>/DatabaseDemo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <url-pattern>/DateTimeDemo</url-pattern>
     </servlet-mapping>
     
    
