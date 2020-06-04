@@ -18,12 +18,12 @@
   </filter-mapping>
   
   
-  <servlet>
-  	<servlet-name>Servlet</servlet-name>
-  	<servlet-class>d.bozhevilnyi.Servlet</servlet-class>
-  </servlet>
+	<servlet>
+	  	<servlet-name>Servlet</servlet-name>
+	  	<servlet-class>d.bozhevilnyi.Servlet</servlet-class>
+	</servlet>
   
-  <servlet>
+    <servlet>
         <servlet-name>StatusCodeDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.StatusCodeDemo</servlet-class>
     </servlet>
@@ -71,6 +71,11 @@
     <servlet>
         <servlet-name>DateTimeDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.DateTimeDemo</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>AutoRefreshDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.AutoRefreshDemo</servlet-class>
     </servlet>
   
   
@@ -122,6 +127,11 @@
     <servlet-mapping>
         <servlet-name>DateTimeDemo</servlet-name>
         <url-pattern>/DateTimeDemo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AutoRefreshDemo</servlet-name>
+        <url-pattern>/AutoRefreshDemo</url-pattern>
     </servlet-mapping>
     
    
