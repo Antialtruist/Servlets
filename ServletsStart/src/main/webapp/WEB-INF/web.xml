@@ -77,11 +77,16 @@
         <servlet-name>AutoRefreshDemo</servlet-name>
         <servlet-class>d.bozhevilnyi.AutoRefreshDemo</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>RedirectDemo</servlet-name>
+        <servlet-class>d.bozhevilnyi.RedirectDemo</servlet-class>
+    </servlet>
   
   
   <servlet-mapping>
-  	<servlet-name>Servlet</servlet-name>
-  	<url-pattern>/Servlet</url-pattern>
+  	    <servlet-name>Servlet</servlet-name>
+  	    <url-pattern>/Servlet</url-pattern>
   </servlet-mapping>
   
   <servlet-mapping>
@@ -132,6 +137,11 @@
     <servlet-mapping>
         <servlet-name>AutoRefreshDemo</servlet-name>
         <url-pattern>/AutoRefreshDemo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>RedirectDemo</servlet-name>
+        <url-pattern>/RedirectDemo</url-pattern>
     </servlet-mapping>
     
    
