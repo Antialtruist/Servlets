@@ -10,26 +10,29 @@ import java.util.Date;
 
 public class RedirectDemo extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-
-
-        String docType = "<!DOCTYPE html>";
-        String title = "Redirect Demo";
-        String redirectionWebsite = "https://bozhevilnyi.netlify.com/";
-        PrintWriter writer = response.getWriter();
-
-        writer.println(docType + "<html>" +
-                "<head>" +
-                "<title>" + title +
-                "</title>" +
-                "</head>" +
-                "<body>" +
-                "<h1>You will be redirected to https://bozhevilnyi.netlify.com/</h1>" +
-                "</body>" +
-                "</html>");
-
-        response.setStatus(response.SC_MOVED_PERMANENTLY);
-        response.setHeader("Location", redirectionWebsite);
+//        response.setContentType("text/html");
+//
+//
+//        String docType = "<!DOCTYPE html>";
+//        String title = "Redirect Demo";
+//        String redirectionWebsite = "https://bozhevilnyi.netlify.com/";
+//        PrintWriter writer = response.getWriter();
+//
+//        writer.println(docType + "<html>" +
+//                "<head>" +
+//                "<title>" + title +
+//                "</title>" +
+//                "</head>" +
+//                "<body>" +
+//                "<h1>You will be redirected to https://bozhevilnyi.netlify.com/</h1>" +
+//                "</body>" +
+//                "</html>");
+//
+//        response.setStatus(response.SC_MOVED_PERMANENTLY);
+//        response.setHeader("Location", redirectionWebsite);
+    	
+    	response.sendRedirect("https://bozhevilnyi.netlify.com");
+    	
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
